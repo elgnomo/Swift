@@ -51,15 +51,15 @@ class ViewController: UIViewController {
                 tile.isUserInteractionEnabled = true
                 
                 self.tileCenterArray.add(currentCenter)
-                tile.backgroundColor = UIColor.red
+                tile.backgroundColor = UIColor.black
                 
                 
-                tile.text = String(tileNumber)
-                //                if tileNumber <= 16{
-                //                    tile.backgroundColor = UIColor(patternImage: UIImage(named: "\(tileNumber).jpg")!)
-                //                }else{
-                //                    tile.backgroundColor = UIColor.darkGray
-                //                }
+                //tile.text = String(tileNumber)
+                                if tileNumber <= 16{
+                                    tile.backgroundColor = UIColor(patternImage: UIImage(named: "\(tileNumber).jpg")!)
+                                }else{
+                                    tile.backgroundColor = UIColor.darkGray
+                                }
                 
                 
                 tile.textAlignment = NSTextAlignment.center
